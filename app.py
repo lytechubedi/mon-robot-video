@@ -2,6 +2,8 @@ import streamlit as st
 import subprocess
 import os
 from google import genai
+from google.genai import types
+
 
 # Installation automatique de FFmpeg
 @st.cache_resource
