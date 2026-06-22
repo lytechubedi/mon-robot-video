@@ -25,7 +25,7 @@ if uploaded_file is not None:
         "ffmpeg", "-y", "-i", fichier_entree,
         "-vf", "scale=1.05*iw:-2,crop=iw/1.05:ih/1.05,format=yuv420p,eq=contrast=1.02:brightness=0.01,hue=s=1.08",
         "-c:v", "libx264", 
-        "-preset", "medium", 
+        preset", "medium", 
         "-c:a", "aac", 
         fichier_sortie
     ]
